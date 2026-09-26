@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AURA-X Demo Wallet</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><main class="wrap">
+<header><div><div class="eyebrow">AURA-X</div><h1>Blockchain Demo Wallet</h1><p class="muted">Educational test network — no real monetary value.</p></div><span id="status" class="pill">Checking…</span></header>
+<section class="grid">
+<div class="card"><h2>Network</h2><div class="metric" id="blocks">—</div><span>blocks</span><div class="row"><span>Chain valid</span><b id="valid">—</b></div></div>
+<div class="card"><h2>Demo supply</h2><div class="metric" id="supply">—</div><span>AURA-X units</span><div class="row"><span>Mining reward</span><b id="reward">—</b></div></div>
+<div class="card form"><h2>Send demo transaction</h2><input id="sender" placeholder="Sender"><input id="recipient" placeholder="Recipient"><input id="amount" type="number" min="1" step="1" placeholder="Amount"><button onclick="sendTx()">Add Transaction</button></div>
+<div class="card form"><h2>Mine pending transactions</h2><input id="miner" placeholder="Miner name" value="demo-miner"><button onclick="mine()">Mine Block</button><p id="message" class="muted"></p></div>
+</section>
+<section class="card"><div class="section-head"><h2>Blockchain</h2><button class="secondary" onclick="refresh()">Refresh</button></div><pre id="chain">Loading…</pre></section>
+</main><script src="/static/app.js"></script></body></html>
